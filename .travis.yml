@@ -51,3 +51,4 @@ env:
 after_success:
   - util/publish-snapshot-on-commit.sh
   - util/generate-latest-docs.sh
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
